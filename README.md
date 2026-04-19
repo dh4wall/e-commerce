@@ -100,33 +100,6 @@ npm start
 
 ---
 
-## 🚀 Push to GitHub
-
-```bash
-# 1. Navigate to project root
-cd "ECOMMERCE APP"
-
-# 2. Initialize git
-git init
-
-# 3. Add all files
-git add .
-
-# 4. Commit
-git commit -m "Initial commit: MERN E-Commerce App"
-
-# 5. Create a new repo on GitHub (no README), then:
-git remote add origin https://github.com/YOUR_USERNAME/ecommerce-app.git
-
-# 6. Push
-git branch -M main
-git push -u origin main
-```
-
-> ⚠️ Make sure `.env` is listed in `.gitignore` so your MongoDB credentials are not pushed to GitHub.
-
----
-
 ## 🛠 Tech Stack
 
 | Layer     | Technology       |
