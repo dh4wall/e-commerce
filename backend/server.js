@@ -5,6 +5,7 @@ require('dotenv').config();
 
 const app = express();
 
+const path = require("path");
 // Middleware
 app.use(cors());
 app.use(express.json());
@@ -19,13 +20,20 @@ app.use('/cart', cartRoutes);
 app.use('/orders', orderRoutes);
 
 // Root route
-app.get('/', (req, res) => {
+/* app.get('/', (req, res) => {
   res.send('E-Commerce API is running...');
-});
+}); */
 
 // Connect to MongoDB and start server
 const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
+
+// Serve React build
+app.use(express.static(path.join(__dirname, "../frontend/build")));
+
+app.use((req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+});
 
 mongoose
   .connect(MONGO_URI)
