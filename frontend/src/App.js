@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-const API = 'http://localhost:5000';
+/* const API = 'http://localhost:5000'; */
+const API = 'http://YOUR_PUBLIC_IP:5000';
 
 function App() {
   const [page, setPage] = useState('products'); // 'products' or 'cart'
