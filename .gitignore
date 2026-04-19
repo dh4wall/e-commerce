@@ -1,0 +1,11 @@
+# dependencies
+node_modules/
+
+# env files
+backend/.env
+
+# frontend build only
+frontend/build/
+
+# optional
+.DS_Store
