@@ -113,3 +113,15 @@ mongoose
     console.error('MongoDB connection error:', err.message);
     process.exit(1);
   });
+
+
+
+// sudo apt update
+// curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+// sudo apt install -y nodejs git
+
+// git clone https://github.com/dh4wall/e-commerce.git
+
+// cd into backend and frontend install and ad env
+
+//npm run build ->frontend  node server.js
